@@ -29,27 +29,20 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  clip-path: polygon(24px 0%, 100% 0%, calc(100% - 24px) 100%, 0% 100%);
 }
 
 .container .bg > div {
-  background: var(--bg-color);
+  background: white;
   width: 100%;
   height: 100%;
-  clip-path: polygon(
-    27px 4px,
-    calc(100% - 46px) 4px,
-    calc(100% - 66px) calc(100% - 4px),
-    7px calc(100% - 4px)
-  );
 }
 
 .container.t1 .bg {
-  background: var(--p1-score-bg-color);
+  background: #2E377D;
 }
 
 .container.t2 .bg {
-  background: var(--p2-score-bg-color);
+  background: #2E377D;
 }
 
 .doubles .container {
@@ -57,13 +50,13 @@ body {
 }
 
 .singles .t1.p1.container {
-  left: 467px;
-  top: 1027px;
+  left: 601px;
+  top: 1037px;
 }
 
 .singles .t2.p1.container {
-  left: 1207px;
-  top: 1027px;
+  left: 1000px;
+  top: 1037px;
 }
 
 .doubles .t1.p1.container {
@@ -87,7 +80,7 @@ body {
 }
 
 .container .name {
-  color: var(--text-color);
+  color: #2E377D;
   position: absolute;
   left: 28px;
   top: 2px;
@@ -138,8 +131,11 @@ body {
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  height: 150px;
   margin: 8px;
   background-image: url("../logo.png");
   background-size: contain;
@@ -170,9 +166,14 @@ body {
 .flagcountry {
   position: absolute;
   top: 6px;
-  left: -80px;
+  left: -40px;
 }
 
+.flagcountry2 {
+  position: absolute;
+  top: 6px;
+  left: -40px;
+}
 .flagstate {
   position: absolute;
   top: 38px;
@@ -214,7 +215,6 @@ body {
 }
 
 .material_container {
-  position: absolute;
   color: var(--text-color);
   overflow: hidden;
   display: flex;
@@ -275,7 +275,12 @@ body {
   font-size: 26px;
 }
 .info.material_container.new {
-  max-width: 100%;
+  position: absolute;
+  border-radius: 0%!important;
+  width: 100vw!important;
+  height:51px !important;
+  background-color: #2E377D!important;
+  border-top: solid 8px white!important;
   font-size: 26px;
   bottom: 0px;
 }

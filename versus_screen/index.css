@@ -163,13 +163,12 @@ body {
 .player.container {
   bottom: 0;
   width: 640px;
-  height: 200px;
+  height: 280px;
+  background: transparent!important;
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: flex-start;
-  padding-left: 32px;
-  padding-right: 32px;
   z-index: 9;
   gap: 42px;
 }
